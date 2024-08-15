@@ -1,0 +1,24 @@
+# Copyright (c) 2016 Adam Karpierz
+# SPDX-License-Identifier: Zlib
+
+include README.rst
+include CHANGES.rst
+include LICENSE
+include pyproject.toml
+include .readthedocs.yml
+
+prune arch
+
+graft docs
+
+graft examples
+
+graft src
+prune src/libtwain/twain.h
+
+graft tests
+prune tests/tests.c
+
+global-exclude \#* \#*/**
+global-exclude .build .build/** .build.* .build.*/**
+global-exclude *.py[cod] __pycache__

@@ -2339,56 +2339,13 @@ pTW_FILTER = ct.POINTER(TW_FILTER)
 # ========================================================================= #
 
 try:
-    DSM_Entry = DSMENTRYPROC(
-                        ("DSM_Entry", dll), (
-                        (1, "pOrigin"),
-                        (1, "pDest"),
-                        (1, "DG"),
-                        (1, "DAT"),
-                        (1, "MSG"),
-                        (1, "pData"),))
-except: pass  # noqa: E722
-
-try:
-    DS_Entry = DSENTRYPROC(
-                        ("DS_Entry", dll), (
-                        (1, "pOrigin"),
-                        (1, "DG"),
-                        (1, "DAT"),
-                        (1, "MSG"),
-                        (1, "pData"),))
-except: pass  # noqa: E722
-
-try:
-    TWAIN_Callback = TWAINCALLBACKPROC(
-                        ("TWAIN_Callback", dll), (
-                        (1, "pOrigin"),
-                        (1, "pDest"),
-                        (1, "DG"),
-                        (1, "DAT"),
-                        (1, "MSG"),
-                        (1, "pData"),))
-except: pass  # noqa: E722
-
-try:
-    DSM_MemAllocate = DSM_MEMALLOCATE(
-                        ("DSM_MemAllocate", dll), (
-                        (1, "size"),))
-except: pass  # noqa: E722
-try:
-    DSM_MemFree = DSM_MEMFREE(
-                        ("DSM_MemFree", dll), (
-                        (1, "handle"),))
-except: pass  # noqa: E722
-try:
-    DSM_MemLock = DSM_MEMLOCK(
-                        ("DSM_MemLock", dll), (
-                        (1, "handle"),))
-except: pass  # noqa: E722
-try:
-    DSM_MemUnlock = DSM_MEMUNLOCK(
-                        ("DSM_MemUnlock", dll), (
-                        (1, "handle"),))
+    DSM_Entry = DSMENTRYPROC(("DSM_Entry", dll), (
+                             (1, "pOrigin"),
+                             (1, "pDest"),
+                             (1, "DG"),
+                             (1, "DAT"),
+                             (1, "MSG"),
+                             (1, "pData"),))
 except: pass  # noqa: E722
 
 # eof

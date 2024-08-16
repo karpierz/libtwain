@@ -1,0 +1,8 @@
+https://twain.org/specification/
+https://github.com/twain
+
+https://github.com/dynarithmic/twain_library
+
+https://pypi.org/project/twain-wia-sane-scanner/
+https://github.com/orgs/Dynamsoft/repositories?type=all
+https://www.dynamsoft.com/codepool/python-twain-wia-sane-document-scanner.html

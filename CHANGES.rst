@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.5.0b0 (2024-08-13)
+2.5.1b0 (2024-08-13)
 --------------------
 - First public release.
 - Implementation of TWAIN API 2.5
